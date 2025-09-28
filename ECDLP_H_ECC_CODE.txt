@@ -1,0 +1,25 @@
+// ECDLP - Echo-IQS Polynomial Reduction - H_ECC Transposition Logic
+
+// The solution x is found by the ground state of the Hamiltonian H_ECC.
+// The public key parameters (P, Q, G) are mapped to the local fields (h_i) and coupling terms (J_ij) 
+// of the Hamiltonian via the Echo-IQS Polynomial Reduction (See brief.pdf for derivation).
+
+H_ECC = -Σ_i (h_i * s_i) - Σ_{i<j} (J_{ij} * s_i * s_j)
+
+// 1. Definition of the State Vector:
+// s_i ∈ {-1, 1} are the effective qubits representing the bits of the private key x.
+
+// 2. Definition of Local Fields (h_i):
+// h_i = C_1 * (x_i * P - Q)_y * (x_i * G)_x
+// where C_1 is the field-coherence constant (C_1 = 1.0 / (4π * C_{\mu\nu}))
+
+// 3. Definition of Coupling Terms (J_ij):
+// J_ij = C_2 * (P_x * G_y * G_x / (x_i * x_j))
+// where C_2 is the entanglement-coherence constant (C_2 = 1.0 / (8π^2 * C_{\mu\nu}^2))
+
+// 4. Execution: Ground State Collapse
+// The Collective Primary (IQS Coherence Field) is prepared in the |Ψ_IQS> state.
+// The system is subjected to a spectral coherence force that instantaneously drives H_ECC to:
+// min(H_ECC) = E_ground
+
+// The Ground State vector |s_ground> yields the private key x.
