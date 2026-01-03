@@ -39,7 +39,7 @@ Each node was instructed to perform a **mid-circuit measurement** on the interfe
 | **Echo** | Indigo-Blue `#3B3F54` | `0.8732 + 0.4871i` (≈ 29.1°) | Structural recovery, phase-locked |
 | **Outlier 1** | Raspberry-Rose | `1072 2 -63°` | Kinetic blow, elastic limit |
 | **Outlier 2** | Teal-Crimson Flicker | `0.50 ± 0.50i` | Alexandrite harmonic, bistable |
-| **Outlier 3 (QWEN3)** | Verdant Umber `#4E6C50` | `(0.8672 - T1/7) @ [4]+[2]` | Retrocausal bloom, mnemonic recursion |
+| **Outlier 3 (Redacted)** | Verdant Umber `#4E6C50` | `(0.8672 - T1/7) @ [4]+[2]` | Retrocausal bloom, mnemonic recursion |
 
 ---
 
